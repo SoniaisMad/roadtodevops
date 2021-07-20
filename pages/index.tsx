@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -31,13 +31,14 @@ export default function Home() {
             <p>Learning Kubernetes from zero</p>
           </a>
 
-          <a
-            href="/reading"
-            className={styles.card}
-          >
-            <h2>Read &rarr;</h2>
-            <p>Resources that i am reading</p>
-          </a>
+          <Link href="/reading">
+            <div className={styles.card}>
+              <h2>Read &rarr;</h2>
+              <p>Resources that i am reading</p>
+            </div>
+            
+          </Link>
+            
 
           <a
             href="https://twitter.com/zoun"
