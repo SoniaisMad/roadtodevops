@@ -12,55 +12,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Road to Devops
-        </h1>
-
-        <p className={styles.description}>
-          My journey from backend developer to Devops
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://crunchcrunch.me/ressources-that-helped-me-get-my-aws-cda-certification" className={styles.card}>
-            <h2>AWS Certification &rarr;</h2>
-            <p>AWS CDA</p>
-          </a>
-
-          <a href="https://github.com/SoniaisMad/100DaysOfKubernetesJourney" className={styles.card}>
-            <h2>#100DaysOfKubernetes &rarr;</h2>
-            <p>Learning Kubernetes from zero</p>
-          </a>
-
-          <Link href="/reading">
-            <div className={styles.card}>
-              <h2>Read &rarr;</h2>
-              <p>Resources that i am reading</p>
-            </div>
-            
-          </Link>
-            
-
-          <a
-            href="https://twitter.com/zoun"
-            className={styles.card}
-          >
-            <h2>Where to follow me &rarr;</h2>
-            <p>
-              Follow me and share your road also!
-            </p>
-          </a>
-        </div>
+      <div className={styles.prompt}>sonia@laptop:~/$</div>
+      <div className={styles.typing_demo}> Hello world</div>
+       {/* <br /> */}
+       {/* sonia@laptop:~/$ Hello, my name is Sonia */}
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Made with love and Next.js
-        </a>
-      </footer>
     </div>
   )
 }
